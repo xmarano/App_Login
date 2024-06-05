@@ -11,6 +11,12 @@
 		B30D90992C109CBF00164F0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30D90982C109CBF00164F0D /* ContentView.swift */; };
 		B30D909B2C109CC200164F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30D909A2C109CC200164F0D /* Assets.xcassets */; };
 		B30D909E2C109CC200164F0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30D909D2C109CC200164F0D /* Preview Assets.xcassets */; };
+		B30D90A62C109CE100164F0D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B30D90A52C109CE100164F0D /* Lottie */; };
+		B30D90A92C109D0F00164F0D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B30D90A82C109D0F00164F0D /* FirebaseAuth */; };
+		B30D90AB2C109DDF00164F0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B30D90AA2C109DDF00164F0D /* GoogleService-Info.plist */; };
+		B30D90AE2C109E1F00164F0D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30D90AD2C109E1F00164F0D /* Login.swift */; };
+		B30D90B02C109E3000164F0D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30D90AF2C109E3000164F0D /* Home.swift */; };
+		B30D90B22C109F2F00164F0D /* EmailAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = B30D90B12C109F2F00164F0D /* EmailAnimation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,10 @@
 		B30D90982C109CBF00164F0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B30D909A2C109CC200164F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30D909D2C109CC200164F0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B30D90AA2C109DDF00164F0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B30D90AD2C109E1F00164F0D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B30D90AF2C109E3000164F0D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B30D90B12C109F2F00164F0D /* EmailAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EmailAnimation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30D90A62C109CE100164F0D /* Lottie in Frameworks */,
+				B30D90A92C109D0F00164F0D /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +47,8 @@
 		B30D908A2C109CBF00164F0D = {
 			isa = PBXGroup;
 			children = (
+				B30D90B12C109F2F00164F0D /* EmailAnimation.json */,
+				B30D90AA2C109DDF00164F0D /* GoogleService-Info.plist */,
 				B30D90952C109CBF00164F0D /* Login */,
 				B30D90942C109CBF00164F0D /* Products */,
 			);
@@ -51,6 +65,7 @@
 		B30D90952C109CBF00164F0D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				B30D90AC2C109DF700164F0D /* View */,
 				B30D90962C109CBF00164F0D /* LoginApp.swift */,
 				B30D90982C109CBF00164F0D /* ContentView.swift */,
 				B30D909A2C109CC200164F0D /* Assets.xcassets */,
@@ -65,6 +80,15 @@
 				B30D909D2C109CC200164F0D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B30D90AC2C109DF700164F0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B30D90AD2C109E1F00164F0D /* Login.swift */,
+				B30D90AF2C109E3000164F0D /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,10 @@
 			dependencies = (
 			);
 			name = Login;
+			packageProductDependencies = (
+				B30D90A52C109CE100164F0D /* Lottie */,
+				B30D90A82C109D0F00164F0D /* FirebaseAuth */,
+			);
 			productName = Login;
 			productReference = B30D90932C109CBF00164F0D /* Login.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,10 @@
 				Base,
 			);
 			mainGroup = B30D908A2C109CBF00164F0D;
+			packageReferences = (
+				B30D90A42C109CE100164F0D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				B30D90A72C109D0F00164F0D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B30D90942C109CBF00164F0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B30D909E2C109CC200164F0D /* Preview Assets.xcassets in Resources */,
+				B30D90AB2C109DDF00164F0D /* GoogleService-Info.plist in Resources */,
+				B30D90B22C109F2F00164F0D /* EmailAnimation.json in Resources */,
 				B30D909B2C109CC200164F0D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30D90AE2C109E1F00164F0D /* Login.swift in Sources */,
 				B30D90992C109CBF00164F0D /* ContentView.swift in Sources */,
+				B30D90B02C109E3000164F0D /* Home.swift in Sources */,
 				B30D90972C109CBF00164F0D /* LoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +380,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B30D90A42C109CE100164F0D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+		B30D90A72C109D0F00164F0D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B30D90A52C109CE100164F0D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B30D90A42C109CE100164F0D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		B30D90A82C109D0F00164F0D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B30D90A72C109D0F00164F0D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B30D908B2C109CBF00164F0D /* Project object */;
 }
