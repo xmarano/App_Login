@@ -62,10 +62,11 @@ struct Login: View {
                                 Image(systemName: "arrow.right")
                                     .font(.callout)
                             }
-                            .padding(.horizontal, 10)
+                            .padding(.vertical, 5)
+                            .frame(maxWidth: .infinity)
                         })
                         .buttonStyle(.borderedProminent)
-                        .buttonBorderShape(.capsule) // Boutton pour changer forme
+                        .buttonBorderShape(.roundedRectangle(radius: 12))
                         .showLoadingIndicator(isLoading)
                         .disabled(buttonStatus)
                     })
@@ -226,15 +227,14 @@ fileprivate extension View {
                     .font(.title3)
                     .foregroundStyle(.gray)
             }
-            
             self
         }
         .padding(.horizontal, 15)
         .padding(.vertical, 12)
         .background(.bar, in: .rect(cornerRadius: 10))
         .padding(.horizontal, 15)
-        .padding(.top, paddingTop)
-        .padding(.bottom, paddingBottom)
+        .padding(.top, paddingTop + 7)
+        .padding(.bottom, paddingBottom + 7)
         .listRowInsets(.init(top: 10, leading: 0, bottom: 0, trailing: 0))
         .listRowSeparator(.hidden)
     }
